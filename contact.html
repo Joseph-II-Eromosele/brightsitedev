@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | BrightSiteDev</title>
+
+    <!-- Google Fonts: Manrope -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --primary-blue: hsla(211, 100%, 50%, 1);
+        --primary-blue-dark: hsla(211, 100%, 40%, 1);
+        --font: "Manrope", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: var(--font);
+        background-color: #fff;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .contact-container {
+        background: #fff;
+        padding: 40px 30px;
+        border-radius: 16px;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        text-align: center;
+      }
+
+      .contact-container img.logo {
+        width: 120px;
+        margin-bottom: 20px;
+        border-radius: 20%;
+      }
+
+      h1 {
+        font-size: 36px;
+        color: var(--primary-blue);
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-family: var(--font);
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: var(--primary-blue);
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: #999;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        color: #fff;
+        background: var(--primary-blue);
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.3s ease, transform 0.2s ease;
+        border: none;
+        cursor: pointer;
+      }
+      .btn-home {
+        display: inline-block;
+        padding: 12px 30px;
+        margin-top: 25px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        background: linear-gradient(
+          135deg,
+          var(--primary-blue),
+          var(--primary-blue-dark)
+        );
+        border-radius: 50px; /* pill shape */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .btn-home:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      .btn:hover {
+        background: var(--primary-blue-dark);
+        transform: translateY(-2px);
+      }
+
+      .social-icons {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .social-icons a {
+        font-size: 24px;
+        color: var(--primary-blue);
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: var(--primary-blue-dark);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--primary-blue);
+        border: 2px solid var(--primary-blue);
+        margin-top: 20px;
+        display: inline-block;
+      }
+
+      .btn-outline:hover {
+        background: var(--primary-blue);
+        color: #fff;
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 600px) {
+        .contact-container {
+          padding: 30px 20px;
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+
+        .btn,
+        .btn-outline {
+          width: 100%;
+        }
+      }
+    </style>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="contact-container">
+      <!-- BrightSiteDev Logo -->
+      <img
+        src="assets/images/logo-icon.svg"
+        alt="BrightSiteDev Logo"
+        class="logo"
+      />
+
+      <h1>Contact Us</h1>
+      <p>
+        Have questions or want to work with us? Send us a message and we'll get
+        back to you.
+      </p>
+
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a
+          href="https://facebook.com/eromosele.648113"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/josephikhuoria"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a
+          href="https://wa.me/2349153375488?text=Hello"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+      </div>
+
+      <!-- Go Back Home Button -->
+      <a href="index.html" class="btn-home">Go Back Home</a>
+    </div>
+  </body>
+</html>

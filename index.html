@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Brightsitedev</title>
+    <meta name="title" content="Brightsitedev" />
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo-icon.svg"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/home-bg.png" />
+    <link rel="preload" as="image" href="./assets/images/TPG.png" />
+    <link rel="preload" as="image" href="./assets/images/agency.png" />
+    <link rel="preload" as="image" href="./assets/images/tech.png" />
+    <link rel="preload" as="image" href="./assets/images/ruth-blog.png" />
+    <link rel="preload" as="image" href="./assets/images/joseph-telecom.png" />
+    <link rel="preload" as="image" href="./assets/images/ecommerce.png" />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="./assets/images/light-logo.svg"
+            width="74"
+            height="24"
+            alt="Brightsitedev home"
+            class="logo-light"
+          />
+
+          <img
+            src="./assets/images/outline-logo.svg"
+            width="74"
+            height="24"
+            alt="Brightsitedev home"
+            class="logo-dark"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="index.html" class="logo">
+              <img
+                src="./assets/images/light-logo.svg"
+                width="74"
+                height="24"
+                alt="Brightsitedev home"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="" class="navbar-link" data-target="services">Services</a>
+            </li>
+
+            <li>
+              <a href="" class="navbar-link" data-target="projects">Projects</a>
+            </li>
+
+            <li>
+              <a href="coming-soon.html" class="navbar-link">Blog</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:brightsitedev.ng@gmail.com" class="contact-link">
+              brightsitedev.ng@gmail.com
+            </a>
+
+            <a href="tel:+2349153375488" class="contact-link">
+              +234 915 337 5488
+            </a>
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://facebook.com/eromosele.648113"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://wa.me/2349153375488?text=Hello%20brightsitedev"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/josephikhuoria"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/BrightSiteDevApp" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a
+          href="https://wa.me/2349153375488?text=Hello"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Message Us
+        </a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section
+          class="section hero has-bg-image"
+          aria-label="home"
+          style="background-image: url('./assets/images/home-bg.png')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">Brightsitedev</h1>
+
+              <p class="hero-text">
+                We’re a creative company that focuses on establishing long-term
+                relationships with customers.
+              </p>
+
+              <div class="btn-wrapper">
+                <a href="" class="btn btn-primary" data-target="services"
+                  >Explore Now</a
+                >
+
+                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+              </div>
+            </div>
+
+            <div class="hero-slider" data-slider>
+              <div class="slider-inner">
+                <ul class="slider-container" data-slider-container>
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="./assets/images/TPG.png"
+                        width="575"
+                        height="550"
+                        alt="The Purosful generation"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="./assets/images/agency.png"
+                        width="575"
+                        height="550"
+                        alt="agency-website"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="./assets/images/ecommerce.png"
+                        width="575"
+                        height="550"
+                        alt="ecommerce-website"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+
+                  <li class="slider-item">
+                    <div class="hero-card">
+                      <figure
+                        class="img-holder"
+                        style="--width: 575; --height: 550"
+                      >
+                        <img
+                          src="./assets/images/ruth-blog.png"
+                          width="575"
+                          height="550"
+                          alt="ruth-blog"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <button
+                        class="play-btn"
+                        aria-label="play Brightsitedev intro"
+                      >
+                        <ion-icon name="play" aria-hidden="true"></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="./assets/images/tech.png"
+                        width="575"
+                        height="550"
+                        alt="tech-website"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="./assets/images/joseph-telecom.png"
+                        width="575"
+                        height="550"
+                        alt="VTU-website"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                class="slider-btn prev"
+                aria-label="slide to previous"
+                data-slider-prev
+              >
+                <ion-icon name="arrow-back"></ion-icon>
+              </button>
+
+              <button
+                class="slider-btn next"
+                aria-label="slide to next"
+                data-slider-next
+              >
+                <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section
+          class="section service"
+          aria-labelledby="service-label"
+          id="services"
+        >
+          <div class="container">
+            <p class="section-subtitle" id="service-label">What We Do?</p>
+
+            <h2 class="h2 section-title">
+              The services we offer are tailored to support your growth and
+              success.
+            </h2>
+
+            <ul class="grid-list">
+              <!-- Website Development -->
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon name="code-slash" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Website Development</h3>
+
+                  <p class="card-text">
+                    We design and build professional, user-friendly websites
+                    that help you stand out online and grow your brand.
+                  </p>
+
+                  <a
+                    href="https://wa.me/2349153375488?text=Hello%20Brightsitedev,%20I%20am%20contacting%20you%20regarding%20Website%20Development.%20I%20would%20love%20to%20discuss%20my%20project%20and%20how%20we%20can%20work%20together."
+                    class="btn-text"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="span">Message Us</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <!-- Virtual Assistant -->
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon name="people" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Virtual Assistant</h3>
+
+                  <p class="card-text">
+                    Save time and stress— we provide reliable virtual assistance
+                    for tasks, scheduling, and business support.
+                  </p>
+
+                  <a
+                    href="https://wa.me/2349153375488?text=Hello%20Brightsitedev,%20I%20am%20contacting%20you%20regarding%20Virtual%20Assistant%20services.%20I%20would%20love%20to%20discuss%20how%20you%20can%20support%20my%20business."
+                    class="btn-text"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="span">Message Us</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <!-- VTU App/Website -->
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="desktop-sharp"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">VTU App / Website</h3>
+
+                  <p class="card-text">
+                    Start your telecom business with a ready-to-use VTU platform
+                    for data, airtime, and bills at affordable prices.
+                  </p>
+
+                  <a
+                    href="https://wa.me/2349153375488?text=Hello%20Brightsitedev,%20I%20am%20contacting%20you%20regarding%20the%20VTU%20App/Website.%20I%20would%20love%20to%20start%20my%20telecom%20business%20and%20need%20more%20details."
+                    class="btn-text"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="span">Message Us</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <!-- Customer Care Services -->
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="chatbubbles-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Customer Care Services</h3>
+
+                  <p class="card-text">
+                    We provide professional customer care services that ensure
+                    smooth communication and excellent support for your clients.
+                  </p>
+
+                  <a
+                    href="https://wa.me/2349153375488?text=Hello%20Brightsitedev,%20I%20am%20contacting%20you%20regarding%20Customer%20Care%20Services.%20I%20would%20love%20to%20learn%20how%20you%20can%20help%20my%20clients%20get%20better%20support."
+                    class="btn-text"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="span">Message Us</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <!-- Graphic Design -->
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="color-palette-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Graphic Design</h3>
+
+                  <p class="card-text">
+                    Our creative designs help your brand stand out with
+                    eye-catching visuals, from logos and posters to full brand
+                    identity packages.
+                  </p>
+
+                  <a
+                    href="https://wa.me/2349153375488?text=Hello%20Brightsitedev,%20I%20am%20contacting%20you%20regarding%20Graphic%20Design.%20I%20would%20love%20to%20discuss%20creative%20designs%20for%20my%20brand."
+                    class="btn-text"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="span">Message Us</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <!-- Data Analysis -->
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="stats-chart-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Data Analysis</h3>
+
+                  <p class="card-text">
+                    We transform raw data into meaningful insights that guide
+                    smart decision-making and improve your business performance.
+                  </p>
+
+                  <a
+                    href="https://wa.me/2349153375488?text=Hello%20Brightsitedev,%20I%20am%20contacting%20you%20regarding%20Data%20Analysis.%20I%20would%20love%20to%20see%20how%20you%20can%20help%20me%20analyze%20and%20understand%20my%20data."
+                    class="btn-text"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="span">Message Us</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #FEATURE
+      -->
+
+        <section class="section feature" aria-labelledby="feature-label">
+          <div class="container">
+            <figure class="feature-banner">
+              <img
+                src="./assets/images/feature-banner.png"
+                width="800"
+                height="531"
+                loading="lazy"
+                alt="feature banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="feature-content">
+              <p class="section-subtitle" id="feature-label">Our Solutions</p>
+
+              <h2 class="h2 section-title">
+                Smart, reliable, and affordable solutions designed to grow your
+                brand and simplify your life.
+              </h2>
+
+              <p class="section-text">
+                From digital services to customer support, we provide innovative
+                solutions that save you time, reduce stress, and give you the
+                confidence to focus on what matters most.
+              </p>
+
+              <ul class="feature-list">
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    </div>
+                    <span class="span"
+                      >Professional and creative website development that stands
+                      out.</span
+                    >
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    </div>
+                    <span class="span"
+                      >Virtual assistance that saves you time and boosts
+                      productivity.</span
+                    >
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    </div>
+                    <span class="span"
+                      >Affordable VTU apps and websites to launch your
+                      business.</span
+                    >
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon">
+                      <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                    </div>
+                    <span class="span"
+                      >Reliable customer care services that keep your clients
+                      satisfied.</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #STATS
+      -->
+
+        <section class="stats" aria-label="our stats">
+          <div class="container">
+            <ul
+              class="stats-card has-bg-image"
+              style="background-image: url('./assets/images/home-bg.png')"
+            >
+              <li>
+                <p class="card-text">
+                  <span class="h1">20+</span>
+
+                  <span class="span">Completed Projects</span>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">5+</span>
+
+                  <span class="span">Happy Customers</span>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">3</span>
+
+                  <span class="span">Years of Experience</span>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">99.9%</span>
+
+                  <span class="span">Client Satisfaction</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROJECT
+      -->
+
+        <section
+          class="section project"
+          aria-labelledby="project-label"
+          id="projects"
+        >
+          <div class="container">
+            <p class="section-subtitle" id="project-label">Case Studies</p>
+
+            <h2 class="h2 section-title">
+              Check out some of our awesome projects with creative ideas and
+              great design.
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/TPG.png"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="THE-PRPOSEFUL-GENERATION"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a
+                        href="https://brightsitedevapp.github.io/TPG/"
+                        target="_blank"
+                        class="card-title"
+                        >The Purposeful Generation</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      The Purposeful Generation is a youth community inspiring
+                      teens to grow, lead, and impact society positively.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="calendar-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time class="meta-text" datetime="2025-07-14"
+                          >July 2025</time
+                        >
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="document-text-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="meta-text">Empowerment</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/ruth-blog.png"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="blog"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a
+                        href="https://brightsitedevapp.github.io/blog/"
+                        target="_blank"
+                        class="card-title"
+                        >BLOG</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      Inspired by Emmy is a personal blog sharing faith,
+                      inspiration, and life lessons to empower purposeful
+                      living.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="calendar-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time class="meta-text" datetime="2025-07-29">
+                          July 2025</time
+                        >
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="document-text-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="meta-text">Blog</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/joseph-telecom.png"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="joseph-telecom"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a
+                        href="https://sabuss.com/josephtelecom3/"
+                        target="_blank"
+                        class="card-title"
+                        >Joseph Telecom (VTU)
+                      </a>
+                    </h3>
+
+                    <p class="card-text">
+                      Joseph Telecom provides fast, reliable, and affordable
+                      data, airtime, and VTU services with a simple
+                      user-friendly platform.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="calendar-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time class="meta-text" datetime="2023-11"
+                          >Nov 2023</time
+                        >
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="document-text-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="meta-text">VTU website</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section class="cta" aria-label="call to action">
+          <div class="container">
+            <h2 class="h2 section-title">
+              Take the next step! Use our services and watch your business grow.
+            </h2>
+
+            <a
+              href="https://wa.me/2349153375488?text=Hello%20brightsitedev"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Message Us
+            </a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container grid-list">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img
+              src="./assets/images/light-logo.svg"
+              width="74"
+              height="24"
+              alt="Brightsitedev home"
+            />
+          </a>
+
+          <p class="footer-text">
+            &copy; 2025 brightsitedev. <br />
+            All rights reserved.
+          </p>
+
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://facebook.com/eromosele.648113"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://wa.me/2349153375488?text=Hello%20brightsitedev"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/josephikhuoria"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/BrightSiteDevApp" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Get in Touch</p>
+          </li>
+
+          <li>
+            <address class="footer-text">Kaduna, Nigeria</address>
+          </li>
+
+          <li>
+            <a href="mailto:brightsitedev.ng@gmail.com" class="footer-link">
+              brightsitedev.ng@gmail.com
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:+2349153375488" class="footer-link">
+              +234 915 337 5488
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Learn More</p>
+          </li>
+
+          <li>
+            <a href="" class="navbar-link" data-target="services">Services</a>
+          </li>
+
+          <li>
+            <a href="" class="navbar-link" data-target="projects">Projects</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Founder</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="footer-list">
+          <p class="h4 footer-list-title">Our Newsletter</p>
+
+          <p class="footer-text">
+            Subscribe to our newsletter to get our news & deals delivered to
+            you.
+          </p>
+
+          <form
+            action="https://submit-form.com/SbHuHekGo"
+            method="POST"
+            class="input-wrapper"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+              class="input-field"
+            />
+            <button type="submit" class="submit-btn">Join</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Begin of Chaport Live Chat code -->
+    <script type="text/javascript">
+      (function (w, d, v3) {
+        w.chaportConfig = { appId: "689e5f8d4c6e60cfe1404b38" };
+        if (w.chaport) return;
+        v3 = w.chaport = {};
+        v3._q = [];
+        v3._l = {};
+        v3.q = function () {
+          v3._q.push(arguments);
+        };
+        v3.on = function (e, fn) {
+          if (!v3._l[e]) v3._l[e] = [];
+          v3._l[e].push(fn);
+        };
+        var s = d.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://app.chaport.com/javascripts/insert.js";
+        var ss = d.getElementsByTagName("script")[0];
+        ss.parentNode.insertBefore(s, ss);
+      })(window, document);
+    </script>
+    <!-- End of Chaport Live Chat code -->
+  </body>
+</html>
