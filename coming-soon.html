@@ -4,12 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coming Soon | BrightSiteDev Blog</title>
+    <meta
+      name="description"
+      content="The BrightSiteDev Blog is coming soon! Stay tuned for exciting content on web development, tech, and more."
+    />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Coming Soon | BrightSiteDev Blog" />
+    <meta
+      property="og:description"
+      content="The BrightSiteDev Blog is coming soon! Stay tuned for exciting content on web development, tech, and more."
+    />
+    <meta
+      property="og:image"
+      content="https://brightsitedev.tech/assets/images/logo-icon.svg"
+    />
+    <meta property="og:url" content="https://brightsitedev.tech" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Google Fonts: Manrope -->
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo-icon.svg"
+      type="image/svg+xml"
+    />
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BrightSiteDev",
+        "url": "https://brightsitedev.tech",
+        "logo": "https://brightsitedev.tech/assets/images/logo-icon.svg",
+        "sameAs": [
+          "https://www.facebook.com/eromosele.648113",
+          "https://www.linkedin.com/in/josephikhuoria",
+          "https://wa.me/2349153375488?text=Hello"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "url": "https://brightsitedev.tech/contact"
+        }
+      }
+    </script>
 
     <style>
       :root {
@@ -74,15 +119,20 @@
         margin-bottom: 30px;
       }
 
-      .btn {
+      .btn,
+      .btn-home {
         display: inline-block;
         padding: 12px 25px;
-        color: #fff;
-        background: var(--primary-blue);
-        border-radius: 8px;
-        text-decoration: none;
         font-weight: 600;
-        transition: background 0.3s ease, transform 0.2s ease;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .btn {
+        background: var(--primary-blue);
+        margin-bottom: 15px;
       }
 
       .btn:hover {
@@ -90,8 +140,23 @@
         transform: translateY(-2px);
       }
 
+      .btn-home {
+        background: linear-gradient(
+          135deg,
+          var(--primary-blue),
+          var(--primary-blue-dark)
+        );
+        border-radius: 50px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-home:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+      }
+
       .social-icons {
-        margin-top: 25px;
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         gap: 15px;
@@ -107,34 +172,10 @@
         color: var(--primary-blue-dark);
       }
 
-      /* Go Back Home Button Style */
-      .btn-home {
-        display: inline-block;
-        padding: 12px 30px;
-        margin-top: 25px;
-        font-weight: 600;
-        text-decoration: none;
-        color: #fff;
-        background: linear-gradient(
-          135deg,
-          var(--primary-blue),
-          var(--primary-blue-dark)
-        );
-        border-radius: 50px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-      }
-
-      .btn-home:hover {
-        transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-      }
-
       @media (max-width: 600px) {
         .coming-soon-container h1 {
           font-size: 36px;
         }
-
         .btn,
         .btn-home {
           width: 100%;
@@ -153,13 +194,11 @@
   </head>
   <body>
     <div class="coming-soon-container">
-      <!-- BrightSiteDev Logo -->
       <img
         src="assets/images/logo-icon.svg"
         alt="BrightSiteDev Logo"
         class="logo"
       />
-
       <h1>Coming Soon</h1>
       <p>
         The BrightSiteDev Blog is on its way! Exciting content will be here
@@ -172,9 +211,8 @@
         class="btn"
         target="_blank"
         rel="noopener noreferrer"
+        >Contact Us</a
       >
-        Contact Us
-      </a>
 
       <!-- Social Icons -->
       <div class="social-icons">
@@ -182,23 +220,20 @@
           href="https://facebook.com/eromosele.648113"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          <ion-icon name="logo-facebook"></ion-icon>
-        </a>
+          ><ion-icon name="logo-facebook"></ion-icon
+        ></a>
         <a
           href="https://www.linkedin.com/in/josephikhuoria"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
         <a
           href="https://wa.me/2349153375488?text=Hello"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          <ion-icon name="logo-whatsapp"></ion-icon>
-        </a>
+          ><ion-icon name="logo-whatsapp"></ion-icon
+        ></a>
       </div>
 
       <!-- Go Back Home Button -->

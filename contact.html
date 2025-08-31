@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | BrightSiteDev</title>
+    <meta
+      name="description"
+      content="Contact BrightSiteDev for web development, design, or general inquiries. Send us a message and get a quick response."
+    />
 
     <!-- Google Fonts: Manrope -->
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
       rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo-icon.svg"
+      type="image/svg+xml"
     />
 
     <style>
@@ -41,7 +52,7 @@
         border-radius: 16px;
         max-width: 500px;
         width: 100%;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         text-align: center;
       }
 
@@ -62,6 +73,13 @@
         margin-bottom: 30px;
       }
 
+      label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+
       input,
       textarea {
         width: 100%;
@@ -71,12 +89,13 @@
         border: 1px solid #ccc;
         outline: none;
         font-family: var(--font);
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
       }
 
       input:focus,
       textarea:focus {
         border-color: var(--primary-blue);
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        outline: 2px solid rgba(0, 123, 255, 0.3);
       }
 
       input::placeholder,
@@ -101,6 +120,12 @@
         border: none;
         cursor: pointer;
       }
+
+      .btn:hover {
+        background: var(--primary-blue-dark);
+        transform: translateY(-2px);
+      }
+
       .btn-home {
         display: inline-block;
         padding: 12px 30px;
@@ -113,7 +138,7 @@
           var(--primary-blue),
           var(--primary-blue-dark)
         );
-        border-radius: 50px; /* pill shape */
+        border-radius: 50px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         transition: all 0.3s ease;
       }
@@ -121,11 +146,6 @@
       .btn-home:hover {
         transform: translateY(-3px) scale(1.05);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-      }
-
-      .btn:hover {
-        background: var(--primary-blue-dark);
-        transform: translateY(-2px);
       }
 
       .social-icons {
@@ -175,6 +195,7 @@
       }
     </style>
 
+    <!-- Ionicons -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -191,6 +212,7 @@
         src="assets/images/logo-icon.svg"
         alt="BrightSiteDev Logo"
         class="logo"
+        loading="lazy"
       />
 
       <h1>Contact Us</h1>
@@ -200,9 +222,32 @@
       </p>
 
       <form>
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <label for="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
         <button type="submit" class="btn">Send Message</button>
       </form>
 
@@ -234,5 +279,27 @@
       <!-- Go Back Home Button -->
       <a href="index.html" class="btn-home">Go Back Home</a>
     </div>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BrightSiteDev",
+        "url": "https://brightsitedev.tech",
+        "logo": "https://brightsitedev.tech/assets/images/logo-icon.svg",
+        "sameAs": [
+          "https://www.facebook.com/eromosele.648113",
+          "https://www.linkedin.com/in/josephikhuoria",
+          "https://wa.me/2349153375488?text=Hello"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "info@brightsitedev.tech",
+          "url": "https://brightsitedev.tech/contact"
+        }
+      }
+    </script>
   </body>
 </html>
