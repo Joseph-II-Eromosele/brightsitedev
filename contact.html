@@ -16,12 +16,8 @@
     />
 
     <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/logo-icon.svg"
-      type="image/svg+xml"
-    />
-
+    <!-- Standard favicon -->
+    <link rel="icon" href="logo-icon.ico" type="image/x-icon" />
     <style>
       * {
         box-sizing: border-box;
@@ -93,7 +89,7 @@
         border-radius: 8px;
         border: 1px solid #ccc;
         outline: none;
-        font-family: var(--font);
+        font-family: var(--ff-manrope); /* ✔ correct */
         transition: border-color 0.3s ease, box-shadow 0.3s ease;
       }
 
@@ -212,13 +208,15 @@
   </head>
   <body>
     <div class="contact-container">
-      <!-- BrightSiteDev Logo -->
-      <img
-        src="assets/images/logo-icon.svg"
-        alt="BrightSiteDev Logo"
-        class="logo"
-        loading="lazy"
-      />
+      <!-- Brightsitedev Logo -->
+      <a href="index.html">
+        <img
+          src="assets/images/logo-icon.svg"
+          alt="Brightsitedev Logo"
+          class="logo"
+          loading="lazy"
+        />
+      </a>
 
       <h1>Contact Us</h1>
       <p>
