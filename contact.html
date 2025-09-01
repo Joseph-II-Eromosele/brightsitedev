@@ -23,20 +23,20 @@
     />
 
     <style>
-      :root {
-        --primary-blue: hsla(211, 100%, 50%, 1);
-        --primary-blue-dark: hsla(211, 100%, 40%, 1);
-        --font: "Manrope", sans-serif;
-      }
-
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
 
+      :root {
+        --primary-blue: hsla(211, 100%, 50%, 1);
+        --primary-blue-dark: hsla(211, 100%, 40%, 1);
+        --ff-manrope: "Manrope", sans-serif;
+      }
+
       body {
-        font-family: var(--font);
+        font-family: var(--ff-manrope);
         background-color: #fff;
         color: #333;
         display: flex;
@@ -44,6 +44,11 @@
         align-items: center;
         min-height: 100vh;
         padding: 20px;
+      }
+
+      input,
+      textarea {
+        font-family: var(--ff-manrope);
       }
 
       .contact-container {
@@ -221,7 +226,7 @@
         back to you.
       </p>
 
-      <form>
+      <form action="https://submit-form.com/SLUqiconn" method="POST">
         <label for="name">Your Name</label>
         <input
           type="text"
@@ -301,5 +306,30 @@
         }
       }
     </script>
+
+    <!-- Begin of Chaport Live Chat code -->
+    <script type="text/javascript">
+      (function (w, d, v3) {
+        w.chaportConfig = { appId: "689e5f8d4c6e60cfe1404b38" };
+        if (w.chaport) return;
+        v3 = w.chaport = {};
+        v3._q = [];
+        v3._l = {};
+        v3.q = function () {
+          v3._q.push(arguments);
+        };
+        v3.on = function (e, fn) {
+          if (!v3._l[e]) v3._l[e] = [];
+          v3._l[e].push(fn);
+        };
+        var s = d.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://app.chaport.com/javascripts/insert.js";
+        var ss = d.getElementsByTagName("script")[0];
+        ss.parentNode.insertBefore(s, ss);
+      })(window, document);
+    </script>
+    <!-- End of Chaport Live Chat code -->
   </body>
 </html>
