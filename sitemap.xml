@@ -30,4 +30,16 @@
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
    </url>
+   <url>
+      <loc>https://brightsitedev.tech/logo-icon.ico</loc>
+      <lastmod>2025-09-02</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://brightsitedev.tech/assets/images/logo-icon.svg</loc>
+      <lastmod>2025-09-02</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
 </urlset>
