@@ -157,3 +157,7 @@ document.querySelectorAll(".btn[data-target]").forEach((btn) => {
     }
   });
 });
+
+const lightbox = GLightbox({
+  selector: ".glightbox",
+});
