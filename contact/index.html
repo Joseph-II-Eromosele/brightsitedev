@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | BrightSiteDev</title>
+    <meta
+      name="description"
+      content="Contact BrightSiteDev for web development, design, or general inquiries. Send us a message and get a quick response."
+    />
+
+    <!-- Google Fonts: Manrope -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <!-- Standard favicon -->
+
+    <link rel="shortcut icon" href="/logo-icon.ico" type="image/x-icon" />
+    <link rel="icon" href="/logo-icon.ico" type="image/x-icon" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --primary-blue: hsla(211, 100%, 50%, 1);
+        --primary-blue-dark: hsla(211, 100%, 40%, 1);
+        --ff-manrope: "Manrope", sans-serif;
+      }
+
+      body {
+        font-family: var(--ff-manrope);
+        background-color: #fff;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      input,
+      textarea {
+        font-family: var(--ff-manrope);
+      }
+
+      .contact-container {
+        background: #fff;
+        padding: 40px 30px;
+        border-radius: 16px;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .contact-container img.logo {
+        width: 120px;
+        margin-bottom: 20px;
+        border-radius: 20%;
+      }
+
+      h1 {
+        font-size: 36px;
+        color: var(--primary-blue);
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+
+      label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-family: var(--ff-manrope); /* ✔ correct */
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: var(--primary-blue);
+        outline: 2px solid rgba(0, 123, 255, 0.3);
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: #999;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        color: #fff;
+        background: var(--primary-blue);
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.3s ease, transform 0.2s ease;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background: var(--primary-blue-dark);
+        transform: translateY(-2px);
+      }
+
+      .btn-home {
+        display: inline-block;
+        padding: 12px 30px;
+        margin-top: 25px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        background: linear-gradient(
+          135deg,
+          var(--primary-blue),
+          var(--primary-blue-dark)
+        );
+        border-radius: 50px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .btn-home:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      .social-icons {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .social-icons a {
+        font-size: 24px;
+        color: var(--primary-blue);
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: var(--primary-blue-dark);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--primary-blue);
+        border: 2px solid var(--primary-blue);
+        margin-top: 20px;
+        display: inline-block;
+      }
+
+      .btn-outline:hover {
+        background: var(--primary-blue);
+        color: #fff;
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 600px) {
+        .contact-container {
+          padding: 30px 20px;
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+
+        .btn,
+        .btn-outline {
+          width: 100%;
+        }
+      }
+    </style>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="contact-container">
+      <!-- Brightsitedev Logo -->
+      <a href="/">
+        <img
+          src="/assets/images/logo-icon.svg"
+          alt="Brightsitedev Logo"
+          class="logo"
+          loading="lazy"
+        />
+      </a>
+
+      <h1>Contact Us</h1>
+      <p>
+        Have questions or want to work with us? Send us a message and we'll get
+        back to you.
+      </p>
+
+      <form action="https://submit-form.com/SLUqiconn" method="POST">
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <label for="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/profile.php?id=61580001160086"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/josephikhuoria"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a
+          href="https://wa.me/2349153375488?text=Hello"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+      </div>
+
+      <!-- Go Back Home Button -->
+      <a href="/" class="btn-home">Go Back Home</a>
+    </div>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BrightSiteDev",
+        "url": "https://brightsitedev.tech",
+        "logo": "https://brightsitedev.tech/assets/images/logo-icon.svg",
+        "sameAs": [
+          "https://www.facebook.com/eromosele.648113",
+          "https://www.linkedin.com/in/josephikhuoria",
+          "https://wa.me/2349153375488?text=Hello"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "info@brightsitedev.tech",
+          "url": "https://brightsitedev.tech/contact/"
+        }
+      }
+    </script>
+
+    <!-- Begin of Chaport Live Chat code -->
+    <script type="text/javascript">
+      (function (w, d, v3) {
+        w.chaportConfig = { appId: "689e5f8d4c6e60cfe1404b38" };
+        if (w.chaport) return;
+        v3 = w.chaport = {};
+        v3._q = [];
+        v3._l = {};
+        v3.q = function () {
+          v3._q.push(arguments);
+        };
+        v3.on = function (e, fn) {
+          if (!v3._l[e]) v3._l[e] = [];
+          v3._l[e].push(fn);
+        };
+        var s = d.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://app.chaport.com/javascripts/insert.js";
+        var ss = d.getElementsByTagName("script")[0];
+        ss.parentNode.insertBefore(s, ss);
+      })(window, document);
+    </script>
+    <!-- End of Chaport Live Chat code -->
+  </body>
+</html>

@@ -2,37 +2,37 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://brightsitedev.tech/</loc>
-      <lastmod>2025-09-02</lastmod>
+      <lastmod>2025-09-03</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://brightsitedev.tech/contact.html</loc>
-      <lastmod>2025-09-02</lastmod>
+      <loc>https://brightsitedev.tech/contact/</loc>
+      <lastmod>2025-09-03</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://brightsitedev.tech/team.html</loc>
-      <lastmod>2025-09-02</lastmod>
+      <loc>https://brightsitedev.tech/team/</loc>
+      <lastmod>2025-09-03</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://brightsitedev.tech/pricing.html</loc>
-      <lastmod>2025-09-01</lastmod>
+      <loc>https://brightsitedev.tech/pricing/</loc>
+      <lastmod>2025-09-03</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://brightsitedev.tech/coming-soon.html</loc>
-      <lastmod>2025-09-01</lastmod>
+      <loc>https://brightsitedev.tech/blog/</loc>
+      <lastmod>2025-09-03</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
    </url>
    <url>
       <loc>https://brightsitedev.tech/logo-icon.ico</loc>
-      <lastmod>2025-09-02</lastmod>
+      <lastmod>2025-09-03</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
