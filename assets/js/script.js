@@ -161,3 +161,19 @@ document.querySelectorAll(".btn[data-target]").forEach((btn) => {
 const lightbox = GLightbox({
   selector: ".glightbox",
 });
+const videos = document.querySelectorAll(".video-project");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.play();
+      } else {
+        entry.target.pause();
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+videos.forEach((video) => observer.observe(video));
