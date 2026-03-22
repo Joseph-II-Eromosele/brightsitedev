@@ -1,9 +1,8 @@
 "use strict";
 
 /**
- * add event listener on multiple elements
+ * Add event listener on multiple elements
  */
-
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
@@ -13,7 +12,6 @@ const addEventOnElements = function (elements, eventType, callback) {
 /**
  * NAVBAR TOGGLE FOR MOBILE
  */
-
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
@@ -28,9 +26,8 @@ addEventOnElements(navTogglers, "click", toggleNavbar);
 
 /**
  * HEADER
- * active header when window scroll down to 100px
+ * Active header when window scroll down to 100px
  */
-
 const header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", function () {
@@ -44,7 +41,6 @@ window.addEventListener("scroll", function () {
 /**
  * SLIDER
  */
-
 const sliders = document.querySelectorAll("[data-slider]");
 
 const initSlider = function (currentSlider) {
@@ -60,38 +56,27 @@ const initSlider = function (currentSlider) {
     sldierContainer.style.transform = `translateX(-${sldierContainer.children[currentSlidePos].offsetLeft}px)`;
   };
 
-  /**
-   * NEXT SLIDE
-   */
-
+  // NEXT SLIDE
   const slideNext = function () {
     const slideEnd = currentSlidePos >= sldierContainer.childElementCount - 1;
-
     if (slideEnd) {
       currentSlidePos = 0;
     } else {
       currentSlidePos++;
     }
-
     moveSliderItem();
   };
-
   sliderNextBtn.addEventListener("click", slideNext);
 
-  /**
-   * PREVIOUS SLIDE
-   */
-
+  // PREVIOUS SLIDE
   const slidePrev = function () {
     if (currentSlidePos <= 0) {
       currentSlidePos = sldierContainer.childElementCount - 1;
     } else {
       currentSlidePos--;
     }
-
     moveSliderItem();
   };
-
   sliderPrevBtn.addEventListener("click", slidePrev);
 
   const dontHaveExtraItem = sldierContainer.childElementCount <= 1;
@@ -108,9 +93,7 @@ for (let i = 0, len = sliders.length; i < len; i++) {
 /**
  * ACCORDION
  */
-
 const accordions = document.querySelectorAll("[data-accordion]");
-
 let lastActiveAccordion = accordions[0];
 
 const initAccordion = function (currentAccordion) {
@@ -122,7 +105,6 @@ const initAccordion = function (currentAccordion) {
     }
 
     currentAccordion.classList.toggle("expanded");
-
     lastActiveAccordion = currentAccordion;
   };
 
@@ -133,17 +115,19 @@ for (let i = 0, len = accordions.length; i < len; i++) {
   initAccordion(accordions[i]);
 }
 
+/**
+ * SMOOTH SCROLL FOR LINKS
+ */
 document.querySelectorAll(".navbar-link").forEach((link) => {
   link.addEventListener("click", function (e) {
     const targetId = this.getAttribute("data-target");
     if (targetId) {
-      e.preventDefault(); // Only prevent default if data-target exists
+      e.preventDefault();
       const targetSection = document.getElementById(targetId);
       if (targetSection) {
         targetSection.scrollIntoView({ behavior: "smooth" });
       }
     }
-    // If data-target is null, it will just follow the href normally
   });
 });
 
@@ -158,10 +142,17 @@ document.querySelectorAll(".btn[data-target]").forEach((btn) => {
   });
 });
 
+/**
+ * GLIGHTBOX
+ */
 const lightbox = GLightbox({
   selector: ".glightbox",
 });
-const videos = document.querySelectorAll(".video-project");
+
+/**
+ * SCROLL-TRIGGERED AUTOPLAY FOR ALL VIDEOS
+ */
+const videos = document.querySelectorAll(".video-cover");
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -173,7 +164,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.5 }
+  { threshold: 0.5 } // play when 50% visible
 );
 
 videos.forEach((video) => observer.observe(video));
